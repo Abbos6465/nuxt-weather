@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import store from "~/store";
 export default defineNuxtConfig({
-  target: 'static',
   devtools: { enabled: true },
   app: {
     head: {
@@ -19,6 +19,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+  plugins: ['~/store/index'],
   css: [
       "~/assets/scss/app.scss"
   ],
@@ -30,6 +31,7 @@ export default defineNuxtConfig({
               @import "~/assets/scss/_variables.scss";
               @import "~/assets/scss/_mixin.scss";
               @import "~/assets/scss/_media.scss";
+              @import "~/assets/scss/_root.scss";
               `
         }
       }
