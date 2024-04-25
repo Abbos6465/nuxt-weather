@@ -1,0 +1,25 @@
+.container {
+  margin:  0 auto;
+
+  @include min-lg{
+    width: 1200px;
+  }
+
+  @include max-lg{
+    width: 970px;
+  }
+
+  @include max-md{
+    width: 750px;
+  }
+
+  @include max-sm{
+    padding: 0 12px;
+    width: 100%;
+  }
+
+  @include max-xs{
+    padding: 0 10px;
+    width: 100%;
+  }
+}

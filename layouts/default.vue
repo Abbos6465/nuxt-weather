@@ -1,0 +1,1 @@
+<script>  import Header from "~/components/layouts/Header.vue";  export default {    name: "default",    components: {Header}  }</script><template>  <Header/>  <main class="main">    <NuxtPage/>  </main></template><style lang="scss">  .main{    margin-top: 120px;  }</style>
